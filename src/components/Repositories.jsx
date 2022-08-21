@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Fragment } from "react";
 import axios from "axios";
 import { useQuery } from "react-query";
 
@@ -22,7 +22,9 @@ export default function Repositories() {
       <>
         {data.map(repo => {
           return (
-            <>
+            <Fragment
+              key={repo.id}
+            >
               <ul>
                 <li>
                   <a
@@ -31,7 +33,7 @@ export default function Repositories() {
                   </a>
                 </li>
               </ul>
-            </>
+            </Fragment>
           )
         })}
         <button type="button" onClick={refetch}>
