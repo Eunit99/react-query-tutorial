@@ -1,70 +1,22 @@
-# Getting Started with Create React App
+# React Query Tutorial: Getting Started with Fetching Data and State Management with Examples
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## What is React Query library
 
-## Available Scripts
+React Query is a [ReactJS](https://reactjs.org/) preconfigured data management library which gives you power and control over server-side state management, fetching, and caching of data, and error handling in a simple and declarative way without affecting the global state of your application.
 
-In the project directory, you can run:
+Server data is asynchronous - it can easily be outdated, this is because the data is not stored in your React application. This is where React Query shines, to allow you to manipulate the asynchronous data, cache it, and also, update or synchronize it.
 
-### `npm start`
+There is absolutely no point trying to re-invent the wheel by trying to write your code that will handle caching, optimistic UI updates, and other handy features. There are a handful of libraries that provides these features out of the box.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Features of React Query
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Aside from the benefits discussed already, [React Query](https://tanstack.com/query/v4/?from=reactQueryV3&original=https://react-query-v3.tanstack.com/), you should consider using this library for your next project because of the following reasons:
 
-### `npm test`
+- **Caching**: Window focus refetching – This allows React Query to pre-fetch data depending on your application activity
+- **Request retry**: Ability to set the number of request retries in the event of errors.
+- [**Prefetching**](https://react-query.tanstack.com/guides/prefetching) – React Query is able to pre-fetch data depending if your application needs fresh data after an update request. React Query is able to update your data in the background.
+- [**Optimistic updates**](https://react-query.tanstack.com/guides/optimistic-updates) React Query is able to handle complex caching so that your application is fully optimized.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Example result of fetching
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+![ReactQuery](https://user-images.githubusercontent.com/24845008/185809208-d20479dc-2908-4501-907c-d91e40c14f4b.gif)
